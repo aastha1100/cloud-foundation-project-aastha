@@ -4,26 +4,30 @@
 **Objective:** Design and implement a cloud-based DAP to analyze water distribution pipe age and material composition, enabling proactive maintenance prioritization.  
 
 **Background:**  
-The City of Vancouver’s Water Distribution Department manages aging infrastructure, including 60,000+ water mains. Frequent pipe failures (e.g., leaks, bursts) necessitated a data-driven approach to identify high-risk pipes. The DAP aimed to:  
+The City of Vancouver’s Water Distribution Department manages aging infrastructure, including 60,000+ water mains. Frequent pipe failures for instance, leaks, bursts, necessitated a data-driven approach to identify high-risk pipes. The DAP aimed to:  
 - Calculate pipe age from installation dates.  
-- Correlate material types (e.g., cast iron) with failure risks.  
-- Provide actionable insights for resource allocation.  
+- Correlate material types with failure risks.  
+- Provide actionable insights for resource allocation.
 
 **Dataset:**  
 - **Water Distribution Mains Dataset**:  
-  - Fields: `INSTALLATION_DATE`, `MATERIAL_INFO`, `PIPE_DIAMETER`.  
-  - Size: 60,000+ records, updated weekly.  
+  - Fields: `INSTALLATION_DATE`, `MATERIAL_INFO`, `PIPE_DIAMETER`.
+  - `INSTALLATION_DATE`: Pipe installation date in DD/MM/YYYY format.
+  - `MATERIAL_INFO`: Material type used for instance, cast iron, copper, ductile iron.
+  - Size: 60,000+ records.
   - Accuracy: Survey-grade spatial data.  
   - Scope: Excludes residential/commercial connections.  
 
 **Methodology:**  
 1. **Data Collection & Preparation**:  
+   - Load the dataset to python to do initiall cleaning and calculate age of pipe. New column added `Pipe_Age`.
+   - Segregate the data using pandas to three datasets `installation_dates`, `material_info`, `pipe_diameter`.
    - **Ingestion**: Uploaded raw CSV files (`installation_dates`, `material_info`, `pipe_diameter`) to dedicated **Amazon S3 buckets** (Figure 22).  
    - **Segregation**: Organized data by logical categories (e.g., installation dates) for schema-on-read flexibility.  
-2. **Descriptive Statistics**:  
+3. **Descriptive Statistics**:  
    - **Age Calculation**: Used **AWS Athena** SQL queries to compute average pipe age (45 years) and identify 12,083 pipes >70 years old.  
    - **Material Analysis**: Grouped data by `MATERIAL_INFO`; 11,947 aging cast iron pipes were flagged as high-risk.  
-3. **Data Visualization**:  
+4. **Data Visualization**:  
    - **ETL Workflows**: Joined tables in **AWS Glue Visual ETL** (Figure 27) to create a unified dataset (`Final-output`).  
    - **Risk Mapping**: Generated summaries (e.g., material-to-age correlations) for prioritization.  
 
@@ -43,8 +47,6 @@ The City of Vancouver’s Water Distribution Department manages aging infrastruc
 
 **Timeline**:  
 - **4 weeks** (Data ingestion → Cleaning → Analysis → Reporting).  
-
----
 
 ### **Diagnostic Analysis**  
 **Project Title:** Root Cause Analysis of Cast Iron Pipe Failures  
@@ -66,8 +68,6 @@ The City of Vancouver’s Water Distribution Department manages aging infrastruc
 - Technical report linking cast iron corrosion to failure rates.  
 - Athena query outputs (Figure 29).  
 
----
-
 ### **Data Wrangling**  
 **Project Title:** Pipeline Engineering for Water Infrastructure Data  
 **Objective:** Clean, transform, and catalog pipe data for analytics.  
@@ -83,8 +83,6 @@ The City of Vancouver’s Water Distribution Department manages aging infrastruc
 **Deliverables**:  
 - Cleaned dataset (20,000 records) in S3.  
 - Glue DataBrew job profiles (Figure 24).  
-
----
 
 ### **Data Quality Control**  
 **Project Title:** Ensuring Data Integrity for Water Analytics  
@@ -102,24 +100,9 @@ The City of Vancouver’s Water Distribution Department manages aging infrastruc
 - Encrypted S3 buckets with versioning (Figure 30).  
 - CloudWatch dashboard (Figure 31).  
 
----
-
-### **Placeholder Visuals**  
-- **Figure 21:** DAP Architecture  
-- **Figure 22:** S3 Raw Data Buckets  
-- **Figure 23:** AWS Glue Databrew Profiling  
-- **Figure 24:** Data Cleaning in Databrew  
-- **Figure 26:** AWS Glue Catalog Tables  
-- **Figure 27:** Visual ETL Joins  
-- **Figure 28:** Cost Breakdown (USD 1.32/year)  
-- **Figure 29:** Athena Query Output  
-- **Figure 30:** S3 Encryption & Versioning  
-- **Figure 31:** CloudWatch Alerts  
-
----
-
-### **Final Output Alignment with Template**  
+### **Final Output**  
 - **Requirement #1 (Descriptive Analysis):** Achieved via AWS Glue/Athena workflows.  
-- **Requirement #2 (Cost Calculation):** USD 1.32/year operational cost (Figure 28).  
+- **Requirement #2 (Cost Calculation):** USD 1.32/year operational cost (Figure 28).
 
-This structure strictly follows the template’s headings, methodology, and deliverables while incorporating your project’s specifics (e.g., cast iron focus, AWS services). Each section mirrors the depth and rigor of the reference template.
+- <img width="788" alt="Screenshot 2025-03-26 at 11 13 37 PM" src="https://github.com/user-attachments/assets/a327b89f-57b6-4a9b-a1cc-8dfc98d11313" />
+
