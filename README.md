@@ -1,6 +1,4 @@
-# data-analyst-aastha 
-
-<a href="https://github.com/aastha1100/data-analyst-aastha/blob/main/AWS CF Completion Badge.png" target="_blank" rel="noopener noreferrer">📸 View AWS Cloud Foundation Completion Badge</a>
+# project-aastha 
 
 | Analysis Name          | Short Description                                      | Link                   |  
 |------------------------|-------------------------------------------------------|------------------------|  
@@ -8,7 +6,6 @@
 | 🔍 Diagnostic Analysis    | Root cause analysis of pipe failures                  | [View](#diagnostic-analysis)  |  
 | 🧹 Data Wrangling         | Cleaning and preparing data for analytics             | [View](#data-wrangling)       |
 | ✅ Data Quality Control   | Security validation                                   | [View](#data-quality-control)       |  
-
 
 ---
 
@@ -151,8 +148,4 @@ The City of Vancouver’s Water Distribution Department manages aging infrastruc
 - Cast iron’s susceptibility to corrosion is well-documented (Rajani & Kleiner, 2001). This poses a significant risk to Vancouver water system reliability.
 - In summary, this project provides a robust framework for infrastructure management. It combines cloud analytics with engineering insights. It addresses immediate risks while paving the way for future innovations.
 
-
-
-<img width="788" alt="Screenshot 2025-03-26 at 11 13 37 PM" src="https://github.com/user-attachments/assets/a327b89f-57b6-4a9b-a1cc-8dfc98d11313" />
-
-</div>
+<a href="https://github.com/aastha1100/data-analyst-aastha/blob/main/AWS CF Completion Badge.png" target="_blank" rel="noopener noreferrer">📸 View AWS Cloud Foundation Completion Badge</a>
