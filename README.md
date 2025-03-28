@@ -1,8 +1,6 @@
-<div style="background-color: #f0f8ff; padding: 15px; border-radius: 10px;">
+# data-analyst-aastha 
 
 <a href="https://github.com/aastha1100/data-analyst-aastha/blob/main/AWS CF Completion Badge.png" target="_blank" rel="noopener noreferrer">📸 View AWS Cloud Foundation Completion Badge</a>
-
-# data-analyst-aastha  
 
 | Analysis Name          | Short Description                                      | Link                   |  
 |------------------------|-------------------------------------------------------|------------------------|  
