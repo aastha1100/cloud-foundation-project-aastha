@@ -155,4 +155,6 @@ The City of Vancouver’s Water Distribution Department manages aging infrastruc
 
 
 
-<img width="788" alt="Screenshot 2025-03-26 at 11 13 37 PM" src="https://github.com/user-attachments/assets/a327b89f-57b6-4a9b-a1cc-8dfc98d11313" />  
+<img width="788" alt="Screenshot 2025-03-26 at 11 13 37 PM" src="https://github.com/user-attachments/assets/a327b89f-57b6-4a9b-a1cc-8dfc98d11313" />
+
+</div>
