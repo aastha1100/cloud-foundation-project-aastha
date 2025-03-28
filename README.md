@@ -1,10 +1,14 @@
+<div style="background-color: #f0f8ff; padding: 15px; border-radius: 10px;">
+
 # data-analyst-aastha  
 
 | Analysis Name          | Short Description                                      | Link                   |  
 |------------------------|-------------------------------------------------------|------------------------|  
-| Descriptive Analysis   | Cloud-based DAP for water system analysis             | [View](#descriptive-analysis) |  
-| Diagnostic Analysis    | Root cause analysis of pipe failures                  | [View](#diagnostic-analysis)  |  
-| Data Wrangling         | Cleaning and preparing data for analytics             | [View](#data-wrangling)       |  
+| 📊 Descriptive Analysis   | Cloud-based DAP for water system analysis             | [View](#descriptive-analysis) |  
+| 🔍 Diagnostic Analysis    | Root cause analysis of pipe failures                  | [View](#diagnostic-analysis)  |  
+| 🧹 Data Wrangling         | Cleaning and preparing data for analytics             | [View](#data-wrangling)       |
+| ✅ Data Quality Control   | Security validation                                   | [View](#data-quality-control)       |  
+
 
 ---
 
@@ -13,7 +17,7 @@
 **Objective:** Design and implement a cloud-based DAP to analyze water distribution pipe age and material composition enabling proactive maintenance prioritization.  
 
 **Background:**  
-The City of Vancouver’s Water Distribution Department manages aging infrastructure including 60 000+ water mains. Frequent pipe failures for instance leaks bursts necessitated a data-driven approach to identify high-risk pipes. The DAP aimed to:  
+The City of Vancouver’s Water Distribution Department manages aging infrastructure including 60,000+ water mains. Frequent pipe failures for instance leaks bursts necessitated a data-driven approach to identify high-risk pipes. The DAP aimed to:  
 - Calculate pipe age from installation dates.  
 - Correlate material types with failure risks.  
 - Provide actionable insights for resource allocation.  
@@ -23,7 +27,7 @@ The City of Vancouver’s Water Distribution Department manages aging infrastruc
   - Fields: `INSTALLATION_DATE` `MATERIAL_INFO` `PIPE_DIAMETER`.  
   - `INSTALLATION_DATE`: Pipe installation date in DD/MM/YYYY format.  
   - `MATERIAL_INFO`: Material type used for instance cast iron copper ductile iron.  
-  - Size: 60 000+ records.  
+  - Size: 60,000+ records.  
   - Accuracy: Survey-grade spatial data.  
   - Scope: Excludes residential/commercial connections.  
 
@@ -52,7 +56,7 @@ The City of Vancouver’s Water Distribution Department manages aging infrastruc
 
 **Deliverables**:  
 1. **Risk Assessment Report**: Highlighted 11 947 high-risk cast iron pipes needing replacement.  
-2. **Cleaned Dataset**: 20 000 records post-cleaning (Figure 24).  
+2. **Cleaned Dataset**: 20,000 records post-cleaning (Figure 24).  
 3. **Visual Workflows**: ETL pipeline screenshots (Figures 23 26 27).  
 4. **Cost Analysis**: Platform operational cost: **USD 1.32 annually** (Figure 28).  
 
@@ -70,7 +74,7 @@ The City of Vancouver’s Water Distribution Department manages aging infrastruc
    - Linked pipe age (`INSTALLATION_DATE`) and material degradation using **AWS Glue ETL jobs**.  
    - Identified 98.8% of pipes >70 years old as cast iron.  
 2. **Root Cause Validation**:  
-   - Cross-referenced findings with corrosion studies (e.g. Rajani & Kleiner 2001).  
+   - Cross-referenced findings with corrosion studies (Rajani & Kleiner,2001).  
    - Validated via **AWS Athena** queries (Figure 29).  
 
 **Tools & Technologies**:  
@@ -85,23 +89,23 @@ The City of Vancouver’s Water Distribution Department manages aging infrastruc
 
 ## Data Wrangling  
 **Project Title:** Pipeline Engineering for Water Infrastructure Data  
-**Objective:** Clean transform and catalog pipe data for analytics.  
+**Objective:** Clean, transform, and catalog pipe data for analytics.  
 
 **Methodology**:  
 1. **Data Profiling**:  
    - Used **AWS Glue Databrew** (Figure 23) to detect missing values (e.g. null `INSTALLATION_DATE`).  
 2. **Data Cleaning**:  
-   - Removed 40 000+ outliers/null records. Standardized date formats.  
+   - Removed 40,000+ outliers/null records. Standardized date formats.  
 3. **Transformation**:  
    - Cataloged data into **AWS Glue** tables (`van_wat_dist_trf_system`).  
 
 **Deliverables**:  
-- Cleaned dataset (20 000 records) in S3.  
+- Cleaned dataset (20,000 records) in S3.  
 - Glue DataBrew job profiles (Figure 24).  
 
-### **Data Quality Control**  
+## Data Quality Control
 **Project Title:** Ensuring Data Integrity for Water Analytics  
-**Objective:** Implement security validation and governance measures.  
+**Objective:** Implement security, validation, and governance measures.  
 
 **Methodology**:  
 1. **Validation**:  
