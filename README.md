@@ -1,4 +1,4 @@
-# project-aastha 
+# Data Analytic Platform (DAP) Implementation for Vancouver Water Distribution System
 
 | Analysis Name          | Short Description                                      | Link                   |  
 |------------------------|-------------------------------------------------------|------------------------|  
@@ -10,7 +10,6 @@
 ---
 
 ## Descriptive Analysis  
-**Project Title:** Data Analytic Platform (DAP) Implementation for Vancouver Water Distribution System  
 **Objective:** Design and implement a cloud-based DAP to analyze water distribution pipe age and material composition enabling proactive maintenance prioritization.  
 
 **Background:**  
@@ -20,7 +19,8 @@ The City of Vancouver’s Water Distribution Department manages aging infrastruc
 - Provide actionable insights for resource allocation.  
 
 **Dataset:**  
-- **Water Distribution Mains Dataset**:  
+- **Water Distribution Mains Dataset**:
+  - <a href="https://opendata.vancouver.ca/explore/dataset/water-distribution-mains/information/?location=17,49.27105,-123.09393" target="_blank" rel="noopener noreferrer"> Dataset Link</a>
   - Fields: `INSTALLATION_DATE` `MATERIAL_INFO` `PIPE_DIAMETER`.  
   - `INSTALLATION_DATE`: Pipe installation date in DD/MM/YYYY format.  
   - `MATERIAL_INFO`: Material type used for instance cast iron copper ductile iron.  
